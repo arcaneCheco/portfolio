@@ -1,5 +1,11 @@
 import Experience from "./Experience.js";
-import TextOutline from "./TextOutline.js";
+// import TextOutline from "./TextOutline.js";
+import Tree from "./Tree.js";
+import Floor from "./Floor.js";
+import CameraManager from "./CameraManager.js";
+import ContentManager from "./ContentManager.js";
+// import Water from "./Water.js";
+import BgTerrain from "./BgTerrain.js";
 import * as THREE from "three";
 
 export default class World {
@@ -8,8 +14,15 @@ export default class World {
     this.config = this.experience.config;
     this.scene = this.experience.scene;
     this.resources = this.experience.resources;
+    this.debug = this.experience.debug;
     this.resources.on("end", () => {
-      this.setDummy();
+      // this.setDummy();
+      this.setBgTerrain();
+      this.setTree();
+      this.setFloor();
+      // this.setCameraManager();
+      this.setContentManager();
+      // this.setWater();
     });
   }
 
@@ -25,9 +38,40 @@ export default class World {
     this.scene.add(cube);
   }
 
-  resize() {}
+  setTree() {
+    this.tree = new Tree();
+  }
 
-  update() {}
+  setFloor() {
+    this.floor = new Floor();
+  }
+  setCameraManager() {
+    this.cameraManager = new CameraManager();
+  }
+
+  setContentManager() {
+    this.contentManager = new ContentManager();
+  }
+
+  setBgTerrain() {
+    this.bgTerrain = new BgTerrain();
+  }
+
+  // setWater() {
+  //   this.water = new Water();
+  // }
+
+  resize() {
+    if (this.bgTerrain) {
+      this.bgTerrain.resize();
+    }
+  }
+
+  update() {
+    if (this.bgTerrain) {
+      this.bgTerrain.update();
+    }
+  }
 
   destroy() {}
 }

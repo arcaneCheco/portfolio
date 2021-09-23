@@ -94,7 +94,6 @@ export default class Renderer {
     this.postProcess.composer.setPixelRatio(this.config.pixelRatio);
 
     this.postProcess.composer.addPass(this.postProcess.renderPass);
-    // this.postProcess.composer.addPass(this.postProcess.finalPass);
   }
 
   resize() {

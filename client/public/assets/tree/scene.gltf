@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 26549,
+      "max": [3.0959250926971436, 6.7262101173400879, 2.8040750026702881],
+      "min": [-3.6987171173095703, -2.3684780597686768, -2.0594460964202881],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 318588,
+      "componentType": 5126,
+      "count": 26549,
+      "max": [0.99986690282821655, 0.99998611211776733, 1],
+      "min": [-1, -0.99990546703338623, -0.99997061491012573],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 26549,
+      "max": [1, 0.99999338388442993, 0.99998456239700317, 1],
+      "min": [
+        -0.99997454881668091, -0.99999529123306274, -0.99999845027923584, -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 26549,
+      "max": [0.99999898672103882, 0.94237899780273438],
+      "min": [0, 0],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 147744,
+      "max": [26548],
+      "min": [0],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Cécile Amstad (https://sketchfab.com/c.m.a)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/dead-tree-28cc4d58b3e549268509f7eb5a7c42de",
+      "title": "dead tree"
+    },
+    "generator": "Sketchfab-9.55.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 590976,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 212392,
+      "byteOffset": 590976,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 637176,
+      "byteOffset": 803368,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 424784,
+      "byteOffset": 1440544,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1865328,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "CT_TREE4_baseColor.jpeg"
+    },
+    {
+      "uri": "CT_TREE4_metallicRoughness.png"
+    },
+    {
+      "uri": "CT_TREE4_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "CT_TREE4",
+      "normalTexture": {
+        "index": 2,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "strength": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [1, 1, 1, 1],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "roughnessFactor": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "defaultMaterial",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [1],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [-0.70710678118654746, -0, -0, 0.70710678118654757]
+    },
+    {
+      "children": [2],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [3],
+      "matrix": [
+        1, 0, 0, 0, 0, -4.3711390063094768e-8, 0.999999999999999, 0, 0,
+        -0.999999999999999, -4.3711390063094768e-8, 0, 0, 0, 0, 1
+      ],
+      "name": "Collada visual scene group"
+    },
+    {
+      "children": [4],
+      "name": "CT_TREE4"
+    },
+    {
+      "mesh": 0,
+      "name": "defaultMaterial"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [0]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

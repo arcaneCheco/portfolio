@@ -46,7 +46,7 @@ export default class Camera {
     this.modes.debug = {};
     this.modes.debug.instance = this.instance.clone();
     this.modes.debug.instance.rotation.reorder("YXZ");
-    this.modes.debug.instance.position.set(0, 0, 1);
+    this.modes.debug.instance.position.set(0, 3, 8);
 
     this.modes.debug.orbitControls = new OrbitControls(
       this.modes.debug.instance,
@@ -73,7 +73,7 @@ export default class Camera {
 
   update() {
     // Update debug orbit controls
-    this.modes.debug.orbitControls.update();
+    // this.modes.debug.orbitControls.update();
 
     // Apply coordinates
     this.instance.position.copy(this.modes[this.mode].instance.position);
